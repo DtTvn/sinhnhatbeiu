@@ -46,12 +46,12 @@ envelope.addEventListener('click', function (event) {
     envelope.classList.toggle('closed');
     setTimeout(() => {
         isTransitioning = false;
-    }, 1000);
+    }, 500);
     event.stopPropagation();
 });
 
 document.getElementById('nextButton').addEventListener('click', function () {
-    window.location.href = 'banh.html';
+    window.location.href = 'vutru.html';
 });
 
 window.onload = function () {
@@ -59,5 +59,5 @@ window.onload = function () {
     applyWordTypingAnimation();
     setTimeout(() => {
         envelope.classList.remove('closed');
-    }, 1000);
+    }, 500);
 };
